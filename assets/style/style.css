@@ -208,6 +208,7 @@ span {
 }
 /* akhir section 2 */
 
+/* awal section 3 */
 #myExperience {
   display: flex;
   flex-direction: column;
@@ -280,4 +281,112 @@ span {
 
 .experience-body {
   font-size: 11px;
+}
+/* akhir section 3 */
+
+/* awal section 4 */
+#mySelf {
+  display: flex;
+  justify-content: center;
+  padding-block: 44px;
+  padding-inline: 100px;
+  gap: 44px;
+}
+
+.self-content {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.self-content > h1 {
+  color: var(--secondary-color);
+  font-weight: 400;
+}
+
+.self-content > h1 > span {
+  font-weight: 800;
+}
+
+.self-content > p {
+  color: var(--secondary-color);
+  opacity: 80%;
+}
+
+.self-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+
+.self-picture {
+  width: 100%;
+  border-radius: 12px;
+}
+/* akhir section 4 */
+
+/* awal section 5 */
+#myProject {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-color);
+  padding-inline: 100px;
+  padding-block: 64px;
+  gap: 44px;
+}
+
+#myProject > h1 {
+  align-self: center;
+  color: #ffffff;
+  font-size: 34px;
+  font-weight: 400;
+}
+
+#myProject > h1 > span {
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+.project-item {
+  display: flex;
+  gap: 44px;
+}
+
+.project-body {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  width: 52%;
+  gap: 8px;
+}
+
+.project-body > h1 {
+  font-size: 36px;
+}
+
+.project-body > h2 {
+  font-size: 24px;
+}
+
+.project-body > p {
+  font-size: 14px;
+  opacity: 60%;
+}
+
+.direct {
+  height: 24px;
+  width: 24px;
+}
+
+.project-img {
+  width: 48%;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }

@@ -84,7 +84,7 @@ span {
   display: flex;
   flex-direction: column;
   gap: 100px;
-  padding-block: 100px;
+  padding-top: 100px;
 }
 
 /* awal section 1 */
@@ -357,6 +357,12 @@ span {
 .project-item {
   display: flex;
   gap: 44px;
+  padding: 12px;
+}
+
+.project-item:hover {
+  background-color: var(--secondary-color);
+  border-radius: 12px;
 }
 
 .project-body {

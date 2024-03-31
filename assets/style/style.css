@@ -13,9 +13,17 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 14px;
+}
+
 /* awal bagian header */
 
 .header-container {
+  z-index: 1;
   background-color: #ffffff;
   height: 60px;
   display: flex;
@@ -90,9 +98,11 @@ span {
 /* awal section 1 */
 #home {
   display: flex;
+  width: 100%;
+  justify-content: space-between;
   align-self: center;
   gap: 44px;
-  padding-inline: 44px;
+  padding-inline: 100px;
 }
 
 .home-text {
@@ -395,4 +405,56 @@ span {
   width: 48%;
   border-radius: 8px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.project-body-left {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  width: 52%;
+  gap: 8px;
+  text-align: right;
+}
+
+.project-body-left > h1 {
+  font-size: 36px;
+}
+
+.project-body-left > h2 {
+  font-size: 24px;
+}
+
+.project-body-left > p {
+  font-size: 14px;
+  opacity: 60%;
+}
+
+.project-body-left > a {
+  align-self: flex-end;
+}
+/* akhir section 4 */
+
+.social-media {
+  display: flex;
+  gap: 12px;
+}
+
+.social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.social-item:hover {
+  background-color: var(--secondary-color);
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.social-img {
+  width: 44px;
 }

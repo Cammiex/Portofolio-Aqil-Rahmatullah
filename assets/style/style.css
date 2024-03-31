@@ -18,6 +18,8 @@ footer {
   justify-content: center;
   align-items: center;
   padding-block: 14px;
+  font-size: 10px;
+  color: var(--secondary-color);
 }
 
 /* awal bagian header */
@@ -340,7 +342,7 @@ span {
 #myProject {
   display: flex;
   flex-direction: column;
-  background-color: var(--primary-color);
+  /* background-color: #ffffff; */
   padding-inline: 100px;
   padding-block: 64px;
   gap: 44px;
@@ -348,13 +350,13 @@ span {
 
 #myProject > h1 {
   align-self: center;
-  color: #ffffff;
+  color: var(--secondary-color);
   font-size: 34px;
   font-weight: 400;
 }
 
 #myProject > h1 > span {
-  color: #ffffff;
+  color: var(--secondary-color);
   font-weight: 800;
 }
 
@@ -367,12 +369,17 @@ span {
 .project-item {
   display: flex;
   gap: 44px;
-  padding: 12px;
+  padding: 24px;
+  background-color: var(--secondary-color);
+  border-radius: 12px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+  position: relative;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .project-item:hover {
-  background-color: var(--secondary-color);
-  border-radius: 12px;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px);
 }
 
 .project-body {

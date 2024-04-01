@@ -27,6 +27,7 @@ footer {
 .header-container {
   z-index: 1;
   background-color: #ffffff;
+  width: 100%;
   height: 60px;
   display: flex;
   justify-content: space-between;
@@ -141,7 +142,8 @@ span {
   border: 0.5px solid var(--primary-color);
   border-radius: 8px;
   padding: 8px;
-  width: 543px;
+  /* width: 543px; */
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,9 +161,6 @@ span {
 .home-image {
   display: flex;
   height: 360px;
-  /* background-image: url("../images/home-img.png"); */
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 /* akhir section 1 */
 
@@ -169,6 +168,7 @@ span {
 #mySkills {
   display: flex;
   flex-direction: column;
+  width: 100%;
   gap: 34px;
   padding-inline: 44px;
   padding-block: 44px;
@@ -221,6 +221,7 @@ span {
 
 /* awal section 3 */
 #myExperience {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -251,8 +252,8 @@ span {
 .experience-item {
   display: flex;
   flex-direction: column;
-  width: 900px;
-  height: 160px;
+  width: 70%;
+  height: fit-content;
   /* border: 1.5px solid var(--secondary-color); */
   background-color: #ffffff;
   border-radius: 12px;
@@ -297,6 +298,7 @@ span {
 
 /* awal section 4 */
 #mySelf {
+  width: 100%;
   display: flex;
   justify-content: center;
   padding-block: 44px;
@@ -339,6 +341,7 @@ span {
 
 /* awal section 5 */
 #myProject {
+  width: 100%;
   display: flex;
   flex-direction: column;
   /* background-color: #ffffff; */
@@ -367,6 +370,7 @@ span {
 
 .project-item {
   display: flex;
+  width: 100%;
   gap: 44px;
   padding: 24px;
   background-color: var(--secondary-color);
@@ -463,4 +467,122 @@ span {
 
 .social-img {
   width: 44px;
+}
+
+/* responsive */
+@media screen and (max-width: 576px) {
+  .header-container {
+    padding-inline: 2px;
+    height: 32px;
+    padding-block: 2px;
+    justify-content: center;
+  }
+
+  .header-container > a {
+    font-size: 12px;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .contact-me {
+    display: none;
+  }
+
+  .main-container {
+    gap: 44px;
+    padding-top: 50px;
+  }
+
+  /* awal section 1 */
+  #home {
+    padding-inline: 2px;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .home-text {
+    width: 80%;
+  }
+
+  .text-title {
+    font-size: 16px;
+  }
+
+  .text-heading {
+    font-size: 32px;
+  }
+
+  .text-heading > span {
+    font-size: 32px;
+  }
+
+  .button-primary {
+    width: 100%;
+  }
+
+  .home-image {
+    width: 80%;
+    height: 100%;
+  }
+  /* akhir section 1 */
+
+  /* awal section 2 */
+  #myProject {
+    padding-inline: 0px;
+  }
+
+  #mySkills {
+    padding-block: 12px;
+  }
+
+  #mySkills > h1 {
+    font-size: 26px;
+  }
+
+  #mySkills > h1 > span {
+    font-size: 26px;
+  }
+
+  .skill-item {
+    width: 80px;
+    height: 80px;
+    font-size: 12px;
+    gap: 6px;
+  }
+
+  .skill-img {
+    width: 34px;
+  }
+  /* akhir section 2 */
+
+  /* awal section 3 */
+  #myExperience > h1 {
+    font-size: 26px;
+  }
+
+  #myExperience > h1 > span {
+    font-size: 26px;
+  }
+
+  .experience-header > span {
+    display: none;
+  }
+  /* akhir section 3 */
+
+  /* awal section 4 */
+  #mySelf {
+    flex-direction: column;
+    padding-inline: 2px;
+    align-items: center;
+  }
+
+  .self-img {
+    width: 80%;
+  }
+
+  .self-content {
+    width: 90%;
+  }
 }
